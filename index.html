@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arivx Store - Solusi Bot dan Hosting Terbaik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #8b0000 0%, #2c0000 50%, #1a0000 100%);
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .hero-bg {
+            background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2b0ebff5-d128-4ae4-b8f3-40bca3aa6586.png');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(139, 0, 0, 0.7);
+        }
+
+        .product-card {
+            background: linear-gradient(145deg, #2c0000, #1a0000);
+            border: 1px solid #8b0000;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 0, 0, 0.2);
+        }
+
+        .gradient-text {
+            background: linear-gradient(45deg, #ff6b6b, #ff3838, #ff0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #ff0000, #8b0000);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #8b0000, #ff0000);
+            transform: translateY(-2px);
+        }
+
+        .social-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .luffy-character {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="relative overflow-x-hidden">
+    <!-- Luffy Background Character -->
+    <div class="luffy-character w-full md:w-1/2 h-full fixed pointer-events-none">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7f5754de-3bc7-486d-9258-fd9df8c0668e.png" alt="Monkey D Luffy character from One Piece with straw hat and determined expression" class="w-full h-full object-contain opacity-20" />
+    </div>
+
+    <!-- Header -->
+    <header class="fixed w-full bg-black/80 backdrop-blur-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold gradient-text">ARIVX STORE</h1>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#home" class="hover:text-red-400 transition-colors">Home</a></li>
+                        <li><a href="#products" class="hover:text-red-400 transition-colors">Produk</a></li>
+                        <li><a href="#contact" class="hover:text-red-400 transition-colors">Kontak</a></li>
+                    </ul>
+                </nav>
+                <div class="md:hidden">
+                    <button class="text-white">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 py-20">
+            <div class="max-w-2xl">
+                <h2 class="text-5xl md:text-6xl font-bold mb-6">
+                    Solusi <span class="gradient-text">Digital</span> Terbaik
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Temukan berbagai layanan bot dan hosting berkualitas tinggi dengan harga terjangkau. 
+                    Dukungan 24/7 dan garansi kepuasan.
+                </p>
+                <a href="#products" class="btn-primary px-8 py-3 rounded-full font-semibold inline-block">
+                    Jelajahi Produk <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-black/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Produk Unggulan Kami</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Berbagai layanan terbaik untuk kebutuhan digital Anda
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1: Jasa Pasang Bot -->
+                <div class="product-card rounded-2xl p-6">
+                    <div class="w-16 h-16 bg-red-900 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-robot text-2xl text-red-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Jasa Pasang Bot</h3>
+                    <p class="text-gray-300 mb-4">
+                        Layanan pemasangan bot untuk berbagai platform dengan konfigurasi profesional. 
+                        Bot akan diatur sesuai kebutuhan spesifik Anda dengan dukungan teknis penuh.
+                    </p>
+                    <div class="mb-4">
+                        <span class="text-red-400 font-bold text-xl">Mulai dari Rp 10.000</span>
+                    </div>
+                    <a href="https://wa.me/6285785944924?text=Halo%20saya%20mau%20pesan%20jasa%20pasang%20bot" target="_blank"</a>
+                    
+                    <button class="btn-primary w-full py-2 rounded-lg">Pesan Sekarang</button>
+                </div>
+
+                <!-- Product 2: Jadi Bot -->
+                <div class="product-card rounded-2xl p-6">
+                    <div class="w-16 h-16 bg-red-900 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-code text-2xl text-red-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Jadi Bot</h3>
+                    <p class="text-gray-300 mb-4">
+                        Pembuatan bot siap pakai. Fitur lengkap,  performa optimal,dan dapat dipakai di nomor mu
+                    </p>
+                    <div class="mb-4">
+                        <span class="text-red-400 font-bold text-xl">Mulai dari Rp 12.000</span>
+                    </div>
+                                     <a href="https://wa.me/6285785944924?text=Halo%20saya%20mau%20pesan%20jadi%20bot" target="_blank"</a>
+                    <button class="btn-primary w-full py-2 rounded-lg">Pesan Sekarang</button>
+                </div>
+
+                <!-- Product 3: Panel Pterodactyl -->
+                <div class="product-card rounded-2xl p-6">
+                    <div class="w-16 h-16 bg-red-900 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-server text-2xl text-red-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Panel Pterodactyl</h3>
+                    <p class="text-gray-300 mb-4">
+                        Panel hosting buat run bot WhatsApp dengan Performa stabil, uptime 99.9%, dan kontrol panel yang mudah digunakan.
+                    </p>
+                    <div class="mb-4">
+                        <span class="text-red-400 font-bold text-xl">Rp 1.000-15.000/bulan</span>
+                    </div>
+                    <a href="https://wa.me/6285785944924?text=Halo%20saya%20mau%20pesan%20panel%20pterodaly" target="_blank"</a>
+                    <button class="btn-primary w-full py-2 rounded-lg">Pesan Sekarang</button>
+                </div>
+
+                <!-- Product 4: Sewa Bot -->
+                <div class="product-card rounded-2xl p-6">
+                    <div class="w-16 h-16 bg-red-900 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-share-alt text-2xl text-red-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Sewa Bot</h3>
+                    <p class="text-gray-300 mb-4">
+                        Penyewaan bot siap pakai dengan berbagai fitur premium. Tanpa setup rumit, 
+                        langsung bisa digunakan untuk kebutuhan bisnis atau komunitas Anda.
+                    </p>
+                    <div class="mb-4">
+                        <span class="text-red-400 font-bold text-xl">Mulai dari Rp 10.000/bulan</span>
+                    </div>
+                     <a href="https://wa.me/6285785944924?text=Halo%20saya%20mau%20pesan%20sewa%20bot" target="_blank"</a>
+                    <button class="btn-primary w-full py-2 rounded-lg">Pesan Sekarang</button>
+                </div>
+
+                <!-- Product 5: Nokos Indonesia -->
+                <div class="product-card rounded-2xl p-6">
+                    <div class="w-16 h-16 bg-red-900 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-phone text-2xl text-red-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Nokos Indonesia</h3>
+                    <p class="text-gray-300 mb-4">
+                        Layanan nomor kosong Indonesia untuk verifikasi berbagai platform. 
+                        Aman, terpercaya, dan support untuk berbagai aplikasi populer.
+                    </p>
+                    <div class="mb-4">
+                        <span class="text-red-400 font-bold text-xl">Mulai dari Rp 8.000</span>
+                    </div>
+                     <a href="https://wa.me/6285785944924?text=Halo%20saya%20mau%20pesan%20nokos%20indonesia" target="_blank"</a>
+                    <button class="btn-primary w-full py-2 rounded-lg">Pesan Sekarang</button>
+                </div>
+
+                <!-- Product 6: Konsultasi Gratis -->
+                <div class="product-card rounded-2xl p-6">
+                    <div class="w-16 h-16 bg-red-900 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-2xl text-red-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Konsultasi Gratis</h3>
+                    <p class="text-gray-300 mb-4">
+                        Konsultasi gratis untuk membantu memilih layanan yang tepat sesuai kebutuhan Anda. 
+                        Tim support kami siap membantu 24/7.
+                    </p>
+                    <div class="mb-4">
+                        <span class="text-red-400 font-bold text-xl">GRATIS</span>
+                                         <a href="https://wa.me/6285785944924?text=Halo%20saya%20mau%20konsultasi%20" target="_blank"</a>
+                    </div>
+                    <button class="btn-primary w-full py-2 rounded-lg">Hubungi Kami</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black/70">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Hubungi Kami</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Siap melayani kebutuhan digital Anda dengan profesional dan responsif
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- WhatsApp -->
+                <div class="bg-red-900/30 rounded-2xl p-8 text-center">
+                    <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fab fa-whatsapp text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">WhatsApp</h3>
+                    <p class="text-gray-300 mb-6">
+                        Hubungi kami langsung melalui WhatsApp untuk respon cepat dan konsultasi langsung
+                    </p>
+                    <a href="https://wa.me/6285785944924" class="btn-primary px-8 py-3 rounded-full inline-block">
+                        <i class="fab fa-whatsapp mr-2"></i> Chat Sekarang
+                    </a>
+                </div>
+
+                <!-- Instagram -->
+                <div class="bg-red-900/30 rounded-2xl p-8 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fab fa-instagram text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Instagram</h3>
+                    <p class="text-gray-300 mb-6">
+                        Follow kami di Instagram untuk update terbaru, promo spesial, dan tips digital
+                    </p>
+                    <a href="https://instagram.com/arivxstore" class="btn-primary px-8 py-3 rounded-full inline-block">
+                        <i class="fab fa-instagram mr-2"></i> Follow Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold gradient-text mb-4">ARIVX STORE</h3>
+                <p class="text-gray-400 mb-8">
+                    Solusi digital terpercaya untuk semua kebutuhan bot dan hosting Anda
+                </p>
+
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="https://wa.me/6285785944924" class="social-icon text-green-400 text-2xl">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com/arivxstore" class="social-icon text-pink-400 text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:info@arivxstore.com" class="social-icon text-red-400 text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <p class="text-gray-500 text-sm">
+                    © 2024 Arivx Store. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Simple form handling (can be expanded)
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            button.addEventListener('click', function() {
+                const productName = this.closest('.product-card')?.querySelector('h3')?.textContent || 'Layanan';
+              //  alert(`Terima kasih! Anda akan diarahkan untuk memesan: ${productName}`);
+            });
+        });
+    </script>
+</body>
+</html>
+
